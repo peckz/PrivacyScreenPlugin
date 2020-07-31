@@ -38,6 +38,7 @@ static UIImageView *imageView;
     self.viewController.view.window.hidden = YES;
   } else {
     imageView = [[UIImageView alloc]initWithFrame:[self.viewController.view bounds]];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
     [imageView setImage:splash];
     
     #ifdef __CORDOVA_4_0_0
